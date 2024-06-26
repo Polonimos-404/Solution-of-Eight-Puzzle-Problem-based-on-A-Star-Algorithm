@@ -13,8 +13,7 @@ def format_input():
             digit_str = input(notice)
             if valid_input(digit_str):
                 break
-            else:
-                print('*Warning: Invalid Input. Please try again.')
+            print('*Warning: Invalid Input. Please try again.')
         q = [int(i) for i in digit_str]
         return q
     q0 = input_digits('Input the Initial State: (Example: 123456780)\n')

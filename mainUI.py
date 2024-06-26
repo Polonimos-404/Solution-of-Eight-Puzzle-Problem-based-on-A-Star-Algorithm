@@ -26,13 +26,14 @@ class mainUI:
         self.dialog.setObjectName('dialog')
         self.dialog.setStyleSheet('#dialog{background-color: #FFE4C4}')
         self.dialog.setWindowOpacity(0.75)
-        self.label_run = QtWidgets.QLabel(self.dialog)
 
         # 设置字体
         font = QtGui.QFont()
         font.setFamily('微软雅黑')
         font.setPointSize(24)
+
         # 弹出对话框中的文字和按钮
+        self.label_run = QtWidgets.QLabel(self.dialog)
         self.label_run.setGeometry(QtCore.QRect(50, 20, 300, 100))
         self.label_run.setFont(font)
         self.label_run.setAlignment(Qt.AlignCenter)
@@ -72,186 +73,52 @@ class mainUI:
         self.show_text.setGeometry(QtCore.QRect(540, 420, 300, 32))
         self.show_text.setFont(font)
         self.show_text.setText('步骤演示')
-        
+
         self.init_plate = QtWidgets.QLabel(main_ui)
-        self.init_plate.setGeometry((QtCore.QRect(initx, inity, 300, 300)))
-        self.init_plate.setPixmap(QtGui.QPixmap(resource_dir + 'plate.png'))
-        self.init_plate.setObjectName('init_plate')
-
         self.init0 = QtWidgets.QLabel(main_ui)
-        self.init0.setGeometry(QtCore.QRect(initx + 6, inity + 6, 88, 88))
-        self.init0.setPixmap(QtGui.QPixmap(resource_dir + '0.png'))
-        self.init0.setObjectName('init0')
-
         self.init1 = QtWidgets.QLabel(main_ui)
-        self.init1.setGeometry(QtCore.QRect(initx + 106, inity + 6, 88, 88))
-        self.init1.setPixmap(QtGui.QPixmap(resource_dir + '1.png'))
-        self.init1.setObjectName('init1')
-
         self.init2 = QtWidgets.QLabel(main_ui)
-        self.init2.setGeometry(QtCore.QRect(initx + 206, inity + 6, 88, 88))
-        self.init2.setPixmap(QtGui.QPixmap(resource_dir + '2.png'))
-        self.init2.setObjectName('init2')
-
         self.init3 = QtWidgets.QLabel(main_ui)
-        self.init3.setGeometry(QtCore.QRect(initx + 6, inity + 106, 88, 88))
-        self.init3.setPixmap(QtGui.QPixmap(resource_dir + '3.png'))
-        self.init3.setObjectName('init3')
-
         self.init4 = QtWidgets.QLabel(main_ui)
-        self.init4.setGeometry(QtCore.QRect(initx + 106, inity + 106, 88, 88))
-        self.init4.setPixmap(QtGui.QPixmap(resource_dir + '4.png'))
-        self.init4.setObjectName('init4')
-
         self.init5 = QtWidgets.QLabel(main_ui)
-        self.init5.setGeometry(QtCore.QRect(initx + 206, inity + 106, 88, 88))
-        self.init5.setPixmap(QtGui.QPixmap(resource_dir + '5.png'))
-        self.init5.setObjectName('init5')
-
         self.init6 = QtWidgets.QLabel(main_ui)
-        self.init6.setGeometry(QtCore.QRect(initx + 6, inity + 206, 88, 88))
-        self.init6.setPixmap(QtGui.QPixmap(resource_dir + '6.png'))
-        self.init6.setObjectName('init6')
-
         self.init7 = QtWidgets.QLabel(main_ui)
-        self.init7.setGeometry(QtCore.QRect(initx + 106, inity + 206, 88, 88))
-        self.init7.setPixmap(QtGui.QPixmap(resource_dir + '7.png'))
-        self.init7.setObjectName('init7')
-
         self.init8 = QtWidgets.QLabel(main_ui)
-        self.init8.setGeometry(QtCore.QRect(initx + 206, inity + 206, 88, 88))
-        self.init8.setPixmap(QtGui.QPixmap(resource_dir + '8.png'))
-        self.init8.setObjectName('init8')
 
         self.goal_plate = QtWidgets.QLabel(main_ui)
-        self.goal_plate.setGeometry((QtCore.QRect(goalx, goaly, 300, 300)))
-        self.goal_plate.setPixmap(QtGui.QPixmap(resource_dir + 'plate.png'))
-        self.goal_plate.setObjectName('goal_plate')
-
         self.goal0 = QtWidgets.QLabel(main_ui)
-        self.goal0.setGeometry(QtCore.QRect(goalx + 6, goaly + 6, 88, 88))
-        self.goal0.setPixmap(QtGui.QPixmap(resource_dir + '0.png'))
-        self.goal0.setObjectName('goal0')
-
         self.goal1 = QtWidgets.QLabel(main_ui)
-        self.goal1.setGeometry(QtCore.QRect(goalx + 106, goaly + 6, 88, 88))
-        self.goal1.setPixmap(QtGui.QPixmap(resource_dir + '1.png'))
-        self.goal1.setObjectName('goal1')
-
         self.goal2 = QtWidgets.QLabel(main_ui)
-        self.goal2.setGeometry(QtCore.QRect(goalx + 206, goaly + 6, 88, 88))
-        self.goal2.setPixmap(QtGui.QPixmap(resource_dir + '2.png'))
-        self.goal2.setObjectName('goal2')
-
         self.goal3 = QtWidgets.QLabel(main_ui)
-        self.goal3.setGeometry(QtCore.QRect(goalx + 6, goaly + 106, 88, 88))
-        self.goal3.setPixmap(QtGui.QPixmap(resource_dir + '3.png'))
-        self.goal3.setObjectName('goal3')
-
         self.goal4 = QtWidgets.QLabel(main_ui)
-        self.goal4.setGeometry(QtCore.QRect(goalx + 106, goaly + 106, 88, 88))
-        self.goal4.setPixmap(QtGui.QPixmap(resource_dir + '4.png'))
-        self.goal4.setObjectName('goal4')
-
         self.goal5 = QtWidgets.QLabel(main_ui)
-        self.goal5.setGeometry(QtCore.QRect(goalx + 206, goaly + 106, 88, 88))
-        self.goal5.setPixmap(QtGui.QPixmap(resource_dir + '5.png'))
-        self.goal5.setObjectName('goal5')
-
         self.goal6 = QtWidgets.QLabel(main_ui)
-        self.goal6.setGeometry(QtCore.QRect(goalx + 6, goaly + 206, 88, 88))
-        self.goal6.setPixmap(QtGui.QPixmap(resource_dir + '6.png'))
-        self.goal6.setObjectName('goal6')
-
         self.goal7 = QtWidgets.QLabel(main_ui)
-        self.goal7.setGeometry(QtCore.QRect(goalx + 106, goaly + 206, 88, 88))
-        self.goal7.setPixmap(QtGui.QPixmap(resource_dir + '7.png'))
-        self.goal7.setObjectName('goal7')
-
         self.goal8 = QtWidgets.QLabel(main_ui)
-        self.goal8.setGeometry(QtCore.QRect(goalx + 206, goaly + 206, 88, 88))
-        self.goal8.setPixmap(QtGui.QPixmap(resource_dir + '8.png'))
-        self.goal8.setObjectName('goal8')
 
         self.show_plate = QtWidgets.QLabel(main_ui)
-        self.show_plate.setGeometry((QtCore.QRect(showx, showy, 300, 300)))
-        self.show_plate.setPixmap(QtGui.QPixmap(resource_dir + 'plate.png'))
-        self.show_plate.setObjectName('show_plate')
-
         self.show0 = QtWidgets.QLabel(main_ui)
-        self.show0.setGeometry(QtCore.QRect(showx + 6, showy + 6, 88, 88))
-        self.show0.setPixmap(QtGui.QPixmap(resource_dir + '0.png'))
-        self.show0.setObjectName('show0')
-
         self.show1 = QtWidgets.QLabel(main_ui)
-        self.show1.setGeometry(QtCore.QRect(showx + 106, showy + 6, 88, 88))
-        self.show1.setPixmap(QtGui.QPixmap(resource_dir + '1.png'))
-        self.show1.setObjectName('show1')
-
         self.show2 = QtWidgets.QLabel(main_ui)
-        self.show2.setGeometry(QtCore.QRect(showx + 206, showy + 6, 88, 88))
-        self.show2.setPixmap(QtGui.QPixmap(resource_dir + '2.png'))
-        self.show2.setObjectName('show2')
-
         self.show3 = QtWidgets.QLabel(main_ui)
-        self.show3.setGeometry(QtCore.QRect(showx + 6, showy + 106, 88, 88))
-        self.show3.setPixmap(QtGui.QPixmap(resource_dir + '3.png'))
-        self.show3.setObjectName('show3')
-
         self.show4 = QtWidgets.QLabel(main_ui)
-        self.show4.setGeometry(QtCore.QRect(showx + 106, showy + 106, 88, 88))
-        self.show4.setPixmap(QtGui.QPixmap(resource_dir + '4.png'))
-        self.show4.setObjectName('show4')
-
         self.show5 = QtWidgets.QLabel(main_ui)
-        self.show5.setGeometry(QtCore.QRect(showx + 206, showy + 106, 88, 88))
-        self.show5.setPixmap(QtGui.QPixmap(resource_dir + '5.png'))
-        self.show5.setObjectName('show5')
-
         self.show6 = QtWidgets.QLabel(main_ui)
-        self.show6.setGeometry(QtCore.QRect(showx + 6, showy + 206, 88, 88))
-        self.show6.setPixmap(QtGui.QPixmap(resource_dir + '6.png'))
-        self.show6.setObjectName('show6')
-
         self.show7 = QtWidgets.QLabel(main_ui)
-        self.show7.setGeometry(QtCore.QRect(showx + 106, showy + 206, 88, 88))
-        self.show7.setPixmap(QtGui.QPixmap(resource_dir + '7.png'))
-        self.show7.setObjectName('show7')
-
         self.show8 = QtWidgets.QLabel(main_ui)
-        self.show8.setGeometry(QtCore.QRect(showx + 206, showy + 206, 88, 88))
-        self.show8.setPixmap(QtGui.QPixmap(resource_dir + '8.png'))
-        self.show8.setObjectName('show8')
 
-        self.init0.setScaledContents(True)
-        self.init1.setScaledContents(True)
-        self.init2.setScaledContents(True)
-        self.init3.setScaledContents(True)
-        self.init4.setScaledContents(True)
-        self.init5.setScaledContents(True)
-        self.init6.setScaledContents(True)
-        self.init7.setScaledContents(True)
-        self.init8.setScaledContents(True)
-
-        self.goal0.setScaledContents(True)
-        self.goal1.setScaledContents(True)
-        self.goal2.setScaledContents(True)
-        self.goal3.setScaledContents(True)
-        self.goal4.setScaledContents(True)
-        self.goal5.setScaledContents(True)
-        self.goal6.setScaledContents(True)
-        self.goal7.setScaledContents(True)
-        self.goal8.setScaledContents(True)
-
-        self.show0.setScaledContents(True)
-        self.show1.setScaledContents(True)
-        self.show2.setScaledContents(True)
-        self.show3.setScaledContents(True)
-        self.show4.setScaledContents(True)
-        self.show5.setScaledContents(True)
-        self.show6.setScaledContents(True)
-        self.show7.setScaledContents(True)
-        self.show8.setScaledContents(True)
+        for name in ['init', 'goal', 'show']:
+            plate = eval('self.' + name + '_plate')
+            x, y = eval(name + 'x'), eval(name + 'y')
+            plate.setGeometry((QtCore.QRect(x, y, 300, 300)))
+            plate.setPixmap(QtGui.QPixmap(resource_dir + 'plate.png'))
+            plate.setObjectName(name + '_plate')
+            for i in range(9):
+                box = eval('self.' + name + str(i))
+                box.setGeometry(QtCore.QRect(x + 6 + (i % 3) * 100, y + 6 + (i // 3) * 100, 88, 88))
+                box.setPixmap(QtGui.QPixmap(resource_dir + str(i) + '.png'))
+                box.setObjectName(name + str(i))
+                box.setScaledContents(True)
 
         # 功能菜单部分
         font = QtGui.QFont()
@@ -265,6 +132,7 @@ class mainUI:
         self.set_tate_button.setText('设置初始状态')
         self.set_tate_button.setToolTip('使用键盘“W,A,S,D”控制空格上下左右移动')
         self.set_tate_button.setObjectName('stbtn')
+
         self.input_state_button = QtWidgets.QPushButton(main_ui)
         self.input_state_button.setGeometry(QtCore.QRect(270, 490, 150, 40))
         self.input_state_button.setFont(font)
